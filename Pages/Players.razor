@@ -1,0 +1,43 @@
+﻿@page "/Players"
+
+@using NCCC_Blazor.Data
+@inject PlayerModelService Services
+
+
+<header class="players_header header">
+    <div class="header_content">
+        <h2 class="heading">PLAYERS</h2>
+    </div>
+</header>
+@if (players == null)
+{
+<p><em>Loading...</em></p> }
+else
+{
+int i = 0;
+
+<section>
+    <div class="wrapper gallery_container players_gallery">
+        @foreach (var player in players)
+        {
+            <div class="profile_container">
+                <a href="PlayerProfile#@player.PlayerModel[i].ID">
+                    <img src="@player.PlayerModel[i].Image_file" alt="@player.PlayerModel[i].ID" />
+                    <div class="player_info">
+                        <h2>@player.PlayerModel[i].PlayerName</h2>
+                        <p>Bowl: @player.PlayerModel[i].Ball</p>
+                        <p>Bat: @player.PlayerModel[i].Bat</p>
+                    </div>
+                </a>
+            </div>i++;
+        }
+    </div>
+</section>}
+
+@code { private PlayerList[] players;
+
+    protected override async Task OnInitializedAsync()
+    {
+        players = await Services.GetPlayers();
+    } 
+}

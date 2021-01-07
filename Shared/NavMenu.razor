@@ -1,0 +1,79 @@
+﻿<nav>
+    <div class="wrapper navbar">
+        <div>
+            <a href="home.aspx">
+                <img src="http://www.nccricketclub.org/Images/logos/nccc-logo-200x155.png" alt="sc" class="nav_logo"><!-- Logo for Navigation Bar> -->
+            </a>
+        </div>
+        <div>
+            <ul class="nav_links">
+                <li>
+                    <a href="home.aspx">
+                        <img src="http://www.nccricketclub.org/Images/logos/nccc-logo-200x155.png" alt="sc" class="mobile_logo"><!-- Logo for Navigation Bar> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="membership">MEMBERSHIP</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="drop_button" type="button">TEAM <span class="drop_icon fas fa-caret-down"></span></button>
+                        <div class="dropdown_content">
+                            <a href="players">PLAYER</a>
+                            <a href="PlayerProfile">Player Profile</a>
+                            <a href="board">BOARD</a>
+                            <a href="sponsor">SPONSORS</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="AboutUs" id="contactLink">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="burger1"></div>
+            <div class="burger2"></div>
+            <div class="burger3"></div>
+        </div>
+
+    </div>
+</nav>
+
+@*<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">NCCC-Blazor</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </li>
+    </ul>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}*@

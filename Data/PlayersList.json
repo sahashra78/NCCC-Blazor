@@ -1,0 +1,190 @@
+{
+  "PlayerModel": [
+    {
+      "ID": "aayush-dhamala",
+      "PlayerName": "Aayush Dhamala",
+      "Role": "All Rounder",
+      "Ball": "right",
+      "Bat": "Right-handed",
+      "Image_file": "../Static/Images/players/aayush-dhamala.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "Tester",
+      "Batting": {
+        "Matches": 3,
+        "Innings": 3,
+        "RunScored": 21,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 84,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 3,
+        "Innings": 2,
+        "Balls": 18,
+        "FiveWicket": 0,
+        "Runs": 15,
+        "Maidens": 0,
+        "Wicket": 2,
+        "Economy": 5
+      },
+      "Fielding": {
+        "Matches": 3,
+        "Innings": 3,
+        "Catches": 3,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "amrit-thapa",
+      "PlayerName": "Amrit Thapa",
+      "Role": "Batsman",
+      "Ball": "Ball",
+      "Bat": "Right-handed",
+      "Image_file": "../Static/Images/players/amrit-thapa.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "Self",
+      "Batting": {
+        "Matches": 3,
+        "Innings": 3,
+        "RunScored": 21,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 84,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 3,
+        "Innings": 2,
+        "Balls": 18,
+        "FiveWicket": 0,
+        "Runs": 15,
+        "Maidens": 0,
+        "Wicket": 2,
+        "Economy": 5
+      },
+      "Fielding": {
+        "Matches": 3,
+        "Innings": 3,
+        "Catches": 3,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "arambha-shrestha",
+      "PlayerName": "Arambha Shrestha",
+      "Role": "Academy",
+      "Ball": "right",
+      "Bat": "Right-handed",
+      "Image_file": "../Static/Images/players/arambha-shrestha.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "Tester",
+      "Batting": {
+        "Matches": 3,
+        "Innings": 3,
+        "RunScored": 21,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 84,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 3,
+        "Innings": 2,
+        "Balls": 18,
+        "FiveWicket": 0,
+        "Runs": 15,
+        "Maidens": 0,
+        "Wicket": 2,
+        "Economy": 5
+      },
+      "Fielding": {
+        "Matches": 3,
+        "Innings": 3,
+        "Catches": 3,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "bibas-thapa",
+      "PlayerName": "Bibas Thapa",
+      "Role": "Wicket Keeper",
+      "Ball": "Ball",
+      "Bat": "Right-handed",
+      "Image_file": "../Static/Images/players/bibas-thapa.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "Self",
+      "Batting": {
+        "Matches": 3,
+        "Innings": 3,
+        "RunScored": 21,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 84,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 3,
+        "Innings": 2,
+        "Balls": 18,
+        "FiveWicket": 0,
+        "Runs": 15,
+        "Maidens": 0,
+        "Wicket": 2,
+        "Economy": 5
+      },
+      "Fielding": {
+        "Matches": 3,
+        "Innings": 3,
+        "Catches": 3,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "",
+      "PlayerName": "",
+      "Role": "",
+      "Ball": "",
+      "Bat": "Right-handed",
+      "Image_file": "../Static/Images/players/.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "",
+      "Batting": {
+        "Matches": 3,
+        "Innings": 3,
+        "RunScored": 21,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 84,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 3,
+        "Innings": 2,
+        "Balls": 18,
+        "FiveWicket": 0,
+        "Runs": 15,
+        "Maidens": 0,
+        "Wicket": 2,
+        "Economy": 5
+      },
+      "Fielding": {
+        "Matches": 3,
+        "Innings": 3,
+        "Catches": 3,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    }
+  ]
+}
+

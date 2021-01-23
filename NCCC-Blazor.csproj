@@ -6,10 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Static\Images\CorporateImages\" />
+    <Compile Remove="wwwroot\Static\Images\CorporateImages\**" />
+    <Content Remove="wwwroot\Static\Images\CorporateImages\**" />
+    <EmbeddedResource Remove="wwwroot\Static\Images\CorporateImages\**" />
+    <None Remove="wwwroot\Static\Images\CorporateImages\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ChoETL.JSON" Version="1.2.1.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 

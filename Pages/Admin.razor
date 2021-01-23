@@ -1,0 +1,25 @@
+﻿@page "/Admin";
+
+<header class="aboutUs_header header">
+    <div class="header_content">
+        <h2 class="heading">Admin Page</h2>
+    </div>
+</header>
+<section>
+    <input type="file" id="upload_csv" accept=".csv" />
+    <button id="button_upload_csv">Upload CSV</button>
+</section>
+
+
+
+@inject IJSRuntime JSRuntime
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("PapaParseListener");
+        }
+    }
+}

@@ -1,5 +1,8 @@
 ﻿@page "/"
 
+@using NCCC_Blazor.Data
+@inject PlayerModelService Services
+
 <header class="homepage_header">
     <div class="header_content">
         <h2 class="heading">
@@ -56,17 +59,36 @@
         <span class="slider_control_left fas fa-angle-left" id="slider_control_left"></span>
         <span class="slider_control_right fas fa-angle-right" id="slider_control_right"></span>
         <div class="player_container" id="image_container">
-            <div class="image_container">
-                <div class="profile_container">
-                    <img src="../Static/Images/board/board-mahesh.jpg" alt="Mahesh-Chhetri" />
-                    <div class="player_info">
-                        <h2>Mahesh Chhetri</h2>
-                        <p>Bowl: Right-arm medium fast</p>
-                        <p>Bat: Right-handed bat</p>
-                    </div>
-                </div>
+            @if (players == null)
+            {
+                <p><em>Loading...</em></p> }
+            else
+            {
+                int i = 0;
+                string[] valuablePlayers = {"Mahesh Chhetri", "Shishir Pandey", "Samrat Gautam", "Vikash Dhakal", "Aayush Dhamala", "Man BK"};
 
-                @*<div class="profile_container">
+                <div class="image_container">
+                    @foreach (var player in players)
+                    {
+                        if (valuablePlayers.Contains(player.PlayerModel[i].PlayerName))
+                        {
+                            <div class="profile_container">
+                                <a href="@GetHref(player.PlayerModel[i].ID)">
+                                    <img src="../Static/Images/players/@player.PlayerModel[i].Image_file" alt="@player.PlayerModel[i].ID" />
+                                    <div class="player_info">
+                                        <h2>@player.PlayerModel[i].PlayerName</h2>
+                                        <p>Bowl: @player.PlayerModel[i].Ball</p>
+                                        <p>Bat: @player.PlayerModel[i].Bat</p>
+                                    </div>
+                                </a>
+                            </div>
+                        }
+                        i++;
+                    }
+                </div>
+            }
+
+            @*<div class="profile_container">
                     <img src="../Static/Images/board/Naresh-Budayer.jpg" alt="Naresh-Budayer" />
                     <div class="player_info">
                         <h2>Naresh Budayer</h2>
@@ -74,7 +96,7 @@
                         <p>Bat: Right-handed bat</p>
                     </div>
                 </div>*@
-                <div class="profile_container">
+            @*<div class="profile_container">
                     <img src="../Static/Images/players/samrat-gautam.jpg" alt="Samrat-Gautam" />
                     <div class="player_info">
                         <h2>Samrat Gautam</h2>
@@ -105,17 +127,33 @@
                         <p>Bowl: Right-arm medium fast</p>
                         <p>Bat: Right-handed bat</p>
                     </div>
-                </div>
-            </div>
+                </div>*@
         </div>
     </div>
 </section>
 
-@*<h1>Hello, world!</h1>
+<AnchorNavigation />
 
-    Welcome to your new app.
+@code {
+    private PlayerList[] players;
 
-    <SurveyPrompt Title="How is Blazor working for you?" />*@
+    string GetId(String s) => "#" + s;
+    string GetHref(String s) => "PlayerProfile" + GetId(s);
 
+    protected override async Task OnInitializedAsync()
+    {
+        players = await Services.GetPlayers();
+    }
 
+}
 
+@inject IJSRuntime JSRuntime
+@code{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("sliderListner");
+        }
+    }
+}

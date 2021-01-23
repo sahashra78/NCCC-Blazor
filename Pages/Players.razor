@@ -11,33 +11,51 @@
 </header>
 @if (players == null)
 {
-<p><em>Loading...</em></p> }
+    <p><em>Loading...</em></p> }
 else
 {
-int i = 0;
+    int i = 0;
 
-<section>
-    <div class="wrapper gallery_container players_gallery">
-        @foreach (var player in players)
-        {
-            <div class="profile_container">
-                <a href="PlayerProfile#@player.PlayerModel[i].ID">
-                    <img src="@player.PlayerModel[i].Image_file" alt="@player.PlayerModel[i].ID" />
-                    <div class="player_info">
-                        <h2>@player.PlayerModel[i].PlayerName</h2>
-                        <p>Bowl: @player.PlayerModel[i].Ball</p>
-                        <p>Bat: @player.PlayerModel[i].Bat</p>
-                    </div>
-                </a>
-            </div>i++;
-        }
-    </div>
-</section>}
+    <section>
+        <div class="wrapper gallery_container players_gallery">
+            @foreach (var player in players)
+            {
+                <div class="profile_container tilt" data-tilt>
+                    <a href="@GetHref(player.PlayerModel[i].ID)">
+                        <img src="../Static/Images/players/@player.PlayerModel[i].Image_file" alt="@player.PlayerModel[i].ID" />
+                        <div class="player_info">
+                            <h2>@player.PlayerModel[i].PlayerName</h2>
+                            <p>Bowl: @player.PlayerModel[i].Ball</p>
+                            <p>Bat: @player.PlayerModel[i].Bat</p>
+                        </div>
+                    </a>
+                </div>i++;
+            }
+        </div>
+    </section>
+}
+
+<AnchorNavigation />
 
 @code { private PlayerList[] players;
+
+    string GetId(String s) => "#" + s;
+    string GetHref(String s) => "PlayerProfile" + GetId(s);
 
     protected override async Task OnInitializedAsync()
     {
         players = await Services.GetPlayers();
-    } 
+    }
+}
+
+@inject IJSRuntime JSRuntime
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("TiltListener");
+        }
+    }
 }

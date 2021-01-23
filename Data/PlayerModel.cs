@@ -25,34 +25,34 @@ namespace NCCC_Blazor.Data
 
     public class BattingRecords
     {
-        public int Matches { get; set; }
-        public int Innings { get; set; }
-        public int RunScored { get; set; }
-        public int Fours { get; set; }
-        public int Sixs { get; set; }
-        public int StrikeRate { get; set; }
-        public int Fifties { get; set; }
-        public int Hundred { get; set; }
+        public double Matches { get; set; }
+        public double Innings { get; set; }
+        public double RunScored { get; set; }
+        public double Fours { get; set; }
+        public double Sixs { get; set; }
+        public double StrikeRate { get; set; }
+        public double Fifties { get; set; }
+        public double Hundred { get; set; }
     }
 
     public class BowlingRecords
     {
-        public int Matches { get; set; }
-        public int Innings { get; set; }
-        public int Balls { get; set; }
-        public int FiveWicket { get; set; }
-        public int Runs { get; set; }
-        public int Maidens { get; set; }
-        public int Wicket { get; set; }
-        public int Economy { get; set; }
+        public double Matches { get; set; }
+        public double Innings { get; set; }
+        public double Balls { get; set; }
+        public double FiveWicket { get; set; }
+        public double Runs { get; set; }
+        public double Maidens { get; set; }
+        public double Wicket { get; set; }
+        public double Economy { get; set; }
     }
 
     public class FieldingRecords
     {
-        public int Matches { get; set; }
-        public int Innings { get; set; }
-        public int Catches { get; set; }
-        public int RanOut { get; set; }
-        public int Stump { get; set; }
+        public double Matches { get; set; }
+        public double Innings { get; set; }
+        public double Catches { get; set; }
+        public double RanOut { get; set; }
+        public double Stump { get; set; }
     }
 }

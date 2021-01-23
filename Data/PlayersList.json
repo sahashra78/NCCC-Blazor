@@ -4,11 +4,11 @@
       "ID": "aayush-dhamala",
       "PlayerName": "Aayush Dhamala",
       "Role": "All Rounder",
-      "Ball": "right",
+      "Ball": "Right-arm leg break",
       "Bat": "Right-handed",
-      "Image_file": "../Static/Images/players/aayush-dhamala.jpg",
+      "Image_file": "aayush-dhamala.jpg",
       "Club": "Nepalese Canadian Cricket Club",
-      "Team": "Tester",
+      "Team": "NO TEAM",
       "Batting": {
         "Matches": 3,
         "Innings": 3,
@@ -41,36 +41,36 @@
       "ID": "amrit-thapa",
       "PlayerName": "Amrit Thapa",
       "Role": "Batsman",
-      "Ball": "Ball",
+      "Ball": "Right-arm medium",
       "Bat": "Right-handed",
-      "Image_file": "../Static/Images/players/amrit-thapa.jpg",
+      "Image_file": "amrit-thapa.jpg",
       "Club": "Nepalese Canadian Cricket Club",
-      "Team": "Self",
+      "Team": "TEAM ATUL",
       "Batting": {
-        "Matches": 3,
+        "Matches": 5,
         "Innings": 3,
-        "RunScored": 21,
-        "Fours": 0,
+        "RunScored": 38,
+        "Fours": 2,
         "Sixs": 0,
-        "StrikeRate": 84,
+        "StrikeRate": 64.4,
         "Fifties": 0,
         "Hundred": 0
       },
       "Bowling": {
-        "Matches": 3,
-        "Innings": 2,
-        "Balls": 18,
+        "Matches": 5,
+        "Innings": 4,
+        "Balls": 48,
         "FiveWicket": 0,
-        "Runs": 15,
+        "Runs": 50,
         "Maidens": 0,
-        "Wicket": 2,
-        "Economy": 5
+        "Wicket": 0,
+        "Economy": 6.3
       },
       "Fielding": {
-        "Matches": 3,
-        "Innings": 3,
-        "Catches": 3,
-        "RanOut": 0,
+        "Matches": 5,
+        "Innings": 5,
+        "Catches": 0,
+        "RanOut": 1,
         "Stump": 0
       }
     },
@@ -78,35 +78,35 @@
       "ID": "arambha-shrestha",
       "PlayerName": "Arambha Shrestha",
       "Role": "Academy",
-      "Ball": "right",
+      "Ball": "No Specific Style",
       "Bat": "Right-handed",
-      "Image_file": "../Static/Images/players/arambha-shrestha.jpg",
+      "Image_file": "arambha-shrestha.jpg",
       "Club": "Nepalese Canadian Cricket Club",
-      "Team": "Tester",
+      "Team": "NO TEAM",
       "Batting": {
-        "Matches": 3,
-        "Innings": 3,
-        "RunScored": 21,
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
         "Fours": 0,
         "Sixs": 0,
-        "StrikeRate": 84,
+        "StrikeRate": 0,
         "Fifties": 0,
         "Hundred": 0
       },
       "Bowling": {
-        "Matches": 3,
-        "Innings": 2,
-        "Balls": 18,
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
         "FiveWicket": 0,
-        "Runs": 15,
+        "Runs": 0,
         "Maidens": 0,
-        "Wicket": 2,
-        "Economy": 5
+        "Wicket": 0,
+        "Economy": 0
       },
       "Fielding": {
-        "Matches": 3,
-        "Innings": 3,
-        "Catches": 3,
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
         "RanOut": 0,
         "Stump": 0
       }
@@ -115,30 +115,918 @@
       "ID": "bibas-thapa",
       "PlayerName": "Bibas Thapa",
       "Role": "Wicket Keeper",
-      "Ball": "Ball",
+      "Ball": "No Specific Style",
       "Bat": "Right-handed",
-      "Image_file": "../Static/Images/players/bibas-thapa.jpg",
+      "Image_file": "bibas-thapa.jpg",
       "Club": "Nepalese Canadian Cricket Club",
-      "Team": "Self",
+      "Team": "TEAM DENTAL",
       "Batting": {
-        "Matches": 3,
-        "Innings": 3,
+        "Matches": 11,
+        "Innings": 11,
+        "RunScored": 222,
+        "Fours": 16,
+        "Sixs": 0,
+        "StrikeRate": 84.7,
+        "Fifties": 1,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 11,
+        "Innings": 1,
+        "Balls": 6,
+        "FiveWicket": 0,
+        "Runs": 3,
+        "Maidens": 0,
+        "Wicket": 1,
+        "Economy": 3
+      },
+      "Fielding": {
+        "Matches": 11,
+        "Innings": 11,
+        "Catches": 4,
+        "RanOut": 1,
+        "Stump": 1
+      }
+    },
+    {
+      "ID": "bindu-shrestha",
+      "PlayerName": "Bindu Shrestha",
+      "Role": "Batsman",
+      "Ball": "Left-arm off spin",
+      "Bat": "Left-handed",
+      "Image_file": "bindu-shrestha.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM EVEREST",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "binod-gupta",
+      "PlayerName": "Binod Gupta",
+      "Role": "Batsman",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "binod-gupta.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 2,
+        "Innings": 1,
+        "RunScored": 2,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 66.7,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 2,
+        "Innings": 2,
+        "Balls": 18,
+        "FiveWicket": 0,
+        "Runs": 31,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 10.3
+      },
+      "Fielding": {
+        "Matches": 2,
+        "Innings": 2,
+        "Catches": 0,
+        "RanOut": 1,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "chandra-chapagai",
+      "PlayerName": "Chandra Chapagai",
+      "Role": "All Rounder",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "chandra-chapagai.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM DENTAL",
+      "Batting": {
+        "Matches": 7,
+        "Innings": 6,
+        "RunScored": 74,
+        "Fours": 2,
+        "Sixs": 4,
+        "StrikeRate": 100,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 7,
+        "Innings": 6,
+        "Balls": 96,
+        "FiveWicket": 0,
+        "Runs": 103,
+        "Maidens": 1,
+        "Wicket": 4,
+        "Economy": 6.4
+      },
+      "Fielding": {
+        "Matches": 7,
+        "Innings": 7,
+        "Catches": 2,
+        "RanOut": 1,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "Gopal-Sunar",
+      "PlayerName": "Gopal Sunar",
+      "Role": "Wicket Keeper",
+      "Ball": "No Specific Style",
+      "Bat": "Right-handed",
+      "Image_file": "Gopal-Sunar.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "imran-khan",
+      "PlayerName": "Imran Agsar",
+      "Role": "All Rounder",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "imran-khan.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM ATUL",
+      "Batting": {
+        "Matches": 5,
+        "Innings": 4,
         "RunScored": 21,
         "Fours": 0,
         "Sixs": 0,
-        "StrikeRate": 84,
+        "StrikeRate": 60,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 5,
+        "Innings": 4,
+        "Balls": 48,
+        "FiveWicket": 0,
+        "Runs": 54,
+        "Maidens": 0,
+        "Wicket": 1,
+        "Economy": 6.8
+      },
+      "Fielding": {
+        "Matches": 5,
+        "Innings": 5,
+        "Catches": 3,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "kiroj-shrestha",
+      "PlayerName": "Kiroj Shrestha",
+      "Role": "Bowler",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "kiroj-shrestha.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "BELCHOWK BOYS",
+      "Batting": {
+        "Matches": 3,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
         "Fifties": 0,
         "Hundred": 0
       },
       "Bowling": {
         "Matches": 3,
+        "Innings": 1,
+        "Balls": 12,
+        "FiveWicket": 0,
+        "Runs": 12,
+        "Maidens": 0,
+        "Wicket": 1,
+        "Economy": 6
+      },
+      "Fielding": {
+        "Matches": 3,
+        "Innings": 3,
+        "Catches": 1,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "kushal-bhat",
+      "PlayerName": "Kushal Bhat",
+      "Role": "Bowler",
+      "Ball": "Right-arm leg spin",
+      "Bat": "Right-handed",
+      "Image_file": "kushal-bhat.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM EVEREST",
+      "Batting": {
+        "Matches": 5,
+        "Innings": 3,
+        "RunScored": 4,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 133.3,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 5,
+        "Innings": 5,
+        "Balls": 48,
+        "FiveWicket": 0,
+        "Runs": 53,
+        "Maidens": 0,
+        "Wicket": 2,
+        "Economy": 6.6
+      },
+      "Fielding": {
+        "Matches": 5,
+        "Innings": 5,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "loken-rana",
+      "PlayerName": "Loken Rana",
+      "Role": "Bowler",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "loken-rana.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM DENTAL",
+      "Batting": {
+        "Matches": 4,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 4,
+        "Innings": 4,
+        "Balls": 96,
+        "FiveWicket": 0,
+        "Runs": 97,
+        "Maidens": 1,
+        "Wicket": 6,
+        "Economy": 6.1
+      },
+      "Fielding": {
+        "Matches": 4,
+        "Innings": 4,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "mahesh-chhetri",
+      "PlayerName": "Mahesh Chhetri",
+      "Role": "All Rounder",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "mahesh-chhetri.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM ATUL",
+      "Batting": {
+        "Matches": 10,
+        "Innings": 10,
+        "RunScored": 695,
+        "Fours": 78,
+        "Sixs": 14,
+        "StrikeRate": 136.3,
+        "Fifties": 4,
+        "Hundred": 3
+      },
+      "Bowling": {
+        "Matches": 10,
+        "Innings": 7,
+        "Balls": 146,
+        "FiveWicket": 0,
+        "Runs": 141,
+        "Maidens": 0,
+        "Wicket": 6,
+        "Economy": 5.8
+      },
+      "Fielding": {
+        "Matches": 10,
+        "Innings": 10,
+        "Catches": 3,
+        "RanOut": 1,
+        "Stump": 1
+      }
+    },
+    {
+      "ID": "man-bahadur",
+      "PlayerName": "Man BK",
+      "Role": "All Rounder",
+      "Ball": "Right-arm medium fast",
+      "Bat": "Right-handed",
+      "Image_file": "man-bahadur.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM DENTAL",
+      "Batting": {
+        "Matches": 7,
+        "Innings": 2,
+        "RunScored": 31,
+        "Fours": 4,
+        "Sixs": 0,
+        "StrikeRate": 103.3,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 7,
+        "Innings": 6,
+        "Balls": 144,
+        "FiveWicket": 0,
+        "Runs": 117,
+        "Maidens": 0,
+        "Wicket": 4,
+        "Economy": 6.2
+      },
+      "Fielding": {
+        "Matches": 7,
+        "Innings": 7,
+        "Catches": 2,
+        "RanOut": 5,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "manil-wagle",
+      "PlayerName": "Manil Wagle",
+      "Role": "Bowler",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "manil-wagle.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "BELCHOWK BOYS",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "mohan-gurung",
+      "PlayerName": "Mohan Gurung",
+      "Role": "Wicket Keeper",
+      "Ball": "No Specific Style",
+      "Bat": "Right-handed",
+      "Image_file": "mohan-gurung.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "BELCHOWK BOYS",
+      "Batting": {
+        "Matches": 2,
+        "Innings": 1,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 2,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 2,
+        "Innings": 2,
+        "Catches": 1,
+        "RanOut": 1,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "naresh-budhayer",
+      "PlayerName": "Naresh Budhayer",
+      "Role": "All Rounder",
+      "Ball": "Right-arm off spin",
+      "Bat": "Right-handed",
+      "Image_file": "naresh-budhayer.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM EVEREST",
+      "Batting": {
+        "Matches": 9,
+        "Innings": 8,
+        "RunScored": 315,
+        "Fours": 29,
+        "Sixs": 7,
+        "StrikeRate": 141.3,
+        "Fifties": 1,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 9,
+        "Innings": 6,
+        "Balls": 132,
+        "FiveWicket": 0,
+        "Runs": 124,
+        "Maidens": 3,
+        "Wicket": 6,
+        "Economy": 5.6
+      },
+      "Fielding": {
+        "Matches": 9,
+        "Innings": 9,
+        "Catches": 4,
+        "RanOut": 2,
+        "Stump": 1
+      }
+    },
+    {
+      "ID": "niraj-lama",
+      "PlayerName": "Niraj Lama",
+      "Role": "Batsman",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "niraj-lama.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "BELCHOWK BOYS",
+      "Batting": {
+        "Matches": 2,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 2,
         "Innings": 2,
         "Balls": 18,
         "FiveWicket": 0,
-        "Runs": 15,
+        "Runs": 27,
         "Maidens": 0,
-        "Wicket": 2,
-        "Economy": 5
+        "Wicket": 1,
+        "Economy": 9
+      },
+      "Fielding": {
+        "Matches": 2,
+        "Innings": 2,
+        "Catches": 0,
+        "RanOut": 1,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "niranjan-shrestha",
+      "PlayerName": "Niranjan Shrestha",
+      "Role": "Bowler",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "niranjan-shrestha.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "BELCHOWK BOYS",
+      "Batting": {
+        "Matches": 8,
+        "Innings": 1,
+        "RunScored": 1,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 50,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 8,
+        "Innings": 8,
+        "Balls": 144,
+        "FiveWicket": 0,
+        "Runs": 128,
+        "Maidens": 1,
+        "Wicket": 5,
+        "Economy": 5.3
+      },
+      "Fielding": {
+        "Matches": 8,
+        "Innings": 8,
+        "Catches": 3,
+        "RanOut": 4,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "rabi-basnet",
+      "PlayerName": "Rabi Basnet",
+      "Role": "Batsman",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "rabi-basnet.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM ATUL",
+      "Batting": {
+        "Matches": 1,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 8,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 1,
+        "Innings": 1,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "rajan-tamang",
+      "PlayerName": "Rajan Tamang",
+      "Role": "Batsman",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "rajan-tamang.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM EVEREST",
+      "Batting": {
+        "Matches": 1,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 8,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 1,
+        "Innings": 1,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "rejish-ranjit",
+      "PlayerName": "Rejish Ranjit",
+      "Role": "Bowler",
+      "Ball": "Right-arm leg spin",
+      "Bat": "Right-handed",
+      "Image_file": "rejish-ranjit.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "safal-devkota",
+      "PlayerName": "Safal Devkota",
+      "Role": "Academy",
+      "Ball": "No Specific Style",
+      "Bat": "Right-handed",
+      "Image_file": "safal-devkota.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM EVEREST",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "samrat-gautam",
+      "PlayerName": "Samrat Gautam",
+      "Role": "All Rounder",
+      "Ball": "Right-arm off spin",
+      "Bat": "Right-handed",
+      "Image_file": "samrat-gautam.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM DENTAL",
+      "Batting": {
+        "Matches": 12,
+        "Innings": 6,
+        "RunScored": 39,
+        "Fours": 0,
+        "Sixs": 1,
+        "StrikeRate": 75,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 12,
+        "Innings": 12,
+        "Balls": 308,
+        "FiveWicket": 0,
+        "Runs": 232,
+        "Maidens": 0,
+        "Wicket": 19,
+        "Economy": 4.5
+      },
+      "Fielding": {
+        "Matches": 12,
+        "Innings": 12,
+        "Catches": 4,
+        "RanOut": 1,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "samundra-manandhar",
+      "PlayerName": "Samundra Manandhar",
+      "Role": "Bowler",
+      "Ball": "Right-arm off break",
+      "Bat": "Right-handed",
+      "Image_file": "samundra-manandhar.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "shishir-pandey",
+      "PlayerName": "Shishir Pandey",
+      "Role": "All Rounder",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "shishir-pandey.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "BELCHOWK BOYS",
+      "Batting": {
+        "Matches": 12,
+        "Innings": 10,
+        "RunScored": 116,
+        "Fours": 6,
+        "Sixs": 1,
+        "StrikeRate": 78.9,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 12,
+        "Innings": 10,
+        "Balls": 180,
+        "FiveWicket": 0,
+        "Runs": 186,
+        "Maidens": 0,
+        "Wicket": 5,
+        "Economy": 6.2
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "sunanda-subedi",
+      "PlayerName": "Sunanda Subedi",
+      "Role": "Bowler",
+      "Ball": "Right-arm medium",
+      "Bat": "Right-handed",
+      "Image_file": "sunanda-subedi.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM EVEREST",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "surya-thapa",
+      "PlayerName": "Surya Thapa",
+      "Role": "All Rounder",
+      "Ball": "Right-arm off break",
+      "Bat": "Right-handed",
+      "Image_file": "surya-thapa.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM EVEREST",
+      "Batting": {
+        "Matches": 6,
+        "Innings": 5,
+        "RunScored": 62,
+        "Fours": 7,
+        "Sixs": 0,
+        "StrikeRate": 93.9,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 8,
+        "Innings": 8,
+        "Balls": 144,
+        "FiveWicket": 0,
+        "Runs": 128,
+        "Maidens": 1,
+        "Wicket": 5,
+        "Economy": 5.3
       },
       "Fielding": {
         "Matches": 3,
@@ -149,39 +1037,76 @@
       }
     },
     {
-      "ID": "",
-      "PlayerName": "",
-      "Role": "",
-      "Ball": "",
+      "ID": "utsav-sharma",
+      "PlayerName": "Utsav Sharma",
+      "Role": "All Rounder",
+      "Ball": "Right-arm medium",
       "Bat": "Right-handed",
-      "Image_file": "../Static/Images/players/.jpg",
+      "Image_file": "utsav-sharma.jpg",
       "Club": "Nepalese Canadian Cricket Club",
-      "Team": "",
+      "Team": "TEAM EVEREST",
       "Batting": {
-        "Matches": 3,
-        "Innings": 3,
-        "RunScored": 21,
-        "Fours": 0,
+        "Matches": 8,
+        "Innings": 5,
+        "RunScored": 50,
+        "Fours": 2,
         "Sixs": 0,
-        "StrikeRate": 84,
+        "StrikeRate": 71.4,
         "Fifties": 0,
         "Hundred": 0
       },
       "Bowling": {
-        "Matches": 3,
-        "Innings": 2,
-        "Balls": 18,
+        "Matches": 8,
+        "Innings": 6,
+        "Balls": 126,
         "FiveWicket": 0,
-        "Runs": 15,
+        "Runs": 160,
         "Maidens": 0,
-        "Wicket": 2,
-        "Economy": 5
+        "Wicket": 6,
+        "Economy": 7.6
       },
       "Fielding": {
-        "Matches": 3,
+        "Matches": 8,
+        "Innings": 8,
+        "Catches": 1,
+        "RanOut": 1,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "vikash-dhakal",
+      "PlayerName": "Vikash Dhakal",
+      "Role": "All Rounder",
+      "Ball": "Right-arm medium fast",
+      "Bat": "Right-handed",
+      "Image_file": "vikash-dhakal.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "BELCHOWK BOYS",
+      "Batting": {
+        "Matches": 7,
         "Innings": 3,
-        "Catches": 3,
-        "RanOut": 0,
+        "RunScored": 13,
+        "Fours": 1,
+        "Sixs": 0,
+        "StrikeRate": 100,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 7,
+        "Innings": 7,
+        "Balls": 162,
+        "FiveWicket": 0,
+        "Runs": 138,
+        "Maidens": 0,
+        "Wicket": 10,
+        "Economy": 5.1
+      },
+      "Fielding": {
+        "Matches": 7,
+        "Innings": 7,
+        "Catches": 2,
+        "RanOut": 2,
         "Stump": 0
       }
     }

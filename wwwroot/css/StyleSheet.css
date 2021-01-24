@@ -39,6 +39,13 @@ html, body {
     width: 100%;
     height: auto;
 }
+/*  Style for disable/enable of element */
+.disabled{
+    opacity: 0.6;
+}
+.enabled{
+    opacity: 1;
+}
 
 /* -------------------------
 ------------------------------

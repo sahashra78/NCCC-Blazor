@@ -28,6 +28,7 @@ namespace NCCC_Blazor
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddSingleton<MemberShipHelper>();
             services.AddSingleton<PlayerModelService>();
             services.AddSingleton<BoardMemberModelService>();
 

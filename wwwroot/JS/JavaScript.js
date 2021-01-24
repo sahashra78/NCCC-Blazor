@@ -190,3 +190,101 @@ function BlazorScrollToId(id) {
         });
     }
 }
+
+function MembershipFormListener() {
+
+    $(document).ready(function () {
+        checkFields();
+        function checkFields() {
+            if ($('#fullname').val().length > 0 && $('#email').val().length > 0 && $('#phone').val().length > 0) {
+                $('#submitBtn').prop('disabled', false).addClass('enabled paypal_button').removeClass('disabled');
+                $('#generalSubmitMembership').prop('disabled', false).addClass('enabled paypal_button').removeClass('disabled');
+                $('#playerSubmitMembership').prop('disabled', false).addClass('enabled paypal_button').removeClass('disabled');
+            }
+            else {
+                $('#submitBtn').prop('disabled', true).addClass('disabled').removeClass('enabled');
+                $('#generalSubmitMembership').prop('disabled', true).addClass('disabled').removeClass('enabled');
+                $('#playerSubmitMembership').prop('disabled', true).addClass('disabled').removeClass('enabled');
+            }
+        }
+        $('#fullname').on('change', function () {
+            checkFields();
+        });
+        $('#email').on('change', function () {
+            checkFields();
+        });
+        $('#phone').on('change', function () {
+            checkFields();
+        });
+        $('#paid').on('change', function () {
+            if ($(this).is(':checked')) {
+                $('#paymentMethod').prop('disabled', false);
+                $('#paymentMethod').addClass('enabled').removeClass('disabled');
+                $('#paymentMethodLabel').addClass('enabled').removeClass('disabled');
+                defaultSubmit();
+            }
+            else {
+                $('#paymentMethod').prop('disabled', true);
+                $('#paymentMethod').val('');
+                $('#paymentMethod').addClass('disabled').removeClass('enabled');
+                $('#paymentMethodLabel').addClass('disabled').removeClass('enabled');
+                checkMembership();
+            }
+        });
+        $('#membershipType').on('change', function () {
+            checkMembership();
+        });
+        function checkMembership() {
+            let membershipType = $('#membershipType').find(":selected").val();
+
+            if (membershipType == "general" && $('#paid').is(':not(:checked)')) {
+                generalSubmit();
+            }
+            else if (membershipType == "player" && $('#paid').is(':not(:checked)')) {
+                playerSubmit();
+            }
+            else {
+                defaultSubmit();
+            }
+        }
+        // function for showing the specific button.
+        function defaultSubmit() {
+            $('#playerMembership').css('display', 'none');
+            $('#generalMembership').css('display', 'none');
+            $('#submitBtn').css('display', 'block');
+        }
+        function playerSubmit() {
+            $('#submitBtn').css('display', 'none');
+            $('#generalMembership').css('display', 'none');
+            $('#playerMembership').css('display', 'block');
+        }
+        function generalSubmit() {
+            $('#submitBtn').css('display', 'none');
+            $('#playerMembership').css('display', 'none');
+            $('#generalMembership').css('display', 'block');
+        }
+
+        //string Name, string Email, string Phone, string Address, string Message
+        function sendEmail(e) {
+            $.ajax({
+                url: '/Home/EmailandSaveRecords',
+                type: 'POST',
+                data: { Name: $('#fullname').val(), Email: $('#email').val(), Phone: $('#phone').val(), Address: $('#address').val(), Message: $('#message').val(), MembershipType: $('#membershipType').val() },
+                success: function (data) { },
+                error: function (xhr) { }
+            });
+            alert('ter');
+        }
+        $('#submitBtn').click(function (e) {
+            sendEmail();
+        });
+        $('#playerSubmitMembership').click(function (e) {
+            sendEmail();
+        });
+        $('#generalSubmitMembership').click(function (e) {
+            sendEmail();
+        });
+    });
+
+
+}

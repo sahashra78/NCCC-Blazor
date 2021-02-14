@@ -13,7 +13,7 @@ namespace NCCC_Blazor.Data
     {
         public Task<BoardMemberList[]> GetBoardMembers()
         {
-            string json = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "../NCCC-Blazor/Data/BoardMemberList.json"));
+            string json = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "./Data/BoardMemberList.json"));
 
             BoardMemberList boardMember = Newtonsoft.Json.JsonConvert.DeserializeObject<BoardMemberList>(json);
 

@@ -36,7 +36,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* This class provides padding */
 .padding {
-    padding: 15px;
+    padding: 15px 0;
+}
+.big_padding{
+    padding: 2rem 0;
 }
 /* This class will make image responsive */
 .responsive {
@@ -541,6 +544,7 @@ section {
     font-family: 'Lato', sans-serif;
     font-size: 45px;
     margin: 20px auto;
+    padding: 0 0 2rem;
     color: #333;
 }
 
@@ -548,6 +552,9 @@ section {
     font-size: 30px;
 }
 
+.block h2{
+    padding: 0 0 2rem;
+}
 .blocks .block:nth-child(even) {
     background: rgba(0,0,0,0.05);
 }

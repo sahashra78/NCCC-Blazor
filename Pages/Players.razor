@@ -15,24 +15,29 @@
 else
 {
     int i = 0;
-    <section>
-        <div class="wrapper gallery_container players_gallery">
-            @foreach (var player in players)
-            {
-                string playerId = player.PlayerModel[i].ID;
-                <div class="profile_container tilt" data-tilt @onclick="() => showPlayer(playerId)">
-                    <div id="@player.PlayerModel[i].ID">
-                        <img src="../Static/Images/players/@player.PlayerModel[i].Image_file" alt="@player.PlayerModel[i].ID" />
-                        <div class="player_info">
-                            <h2>@player.PlayerModel[i].PlayerName</h2>
-                            <p>Bowl: @player.PlayerModel[i].Ball</p>
-                            <p>Bat: @player.PlayerModel[i].Bat</p>
-                        </div>
+<section>
+    <div class="wrapper center">
+
+        <h2 class="section_heading">Players Profile</h2>
+
+    </div>
+    <div class="wrapper gallery_container players_gallery">
+        @foreach (var player in players)
+        {
+            string playerId = player.PlayerModel[i].ID;
+            <div class="profile_container tilt" data-tilt @onclick="() => showPlayer(playerId)">
+                <div id="@player.PlayerModel[i].ID">
+                    <img src="../Static/Images/players/@player.PlayerModel[i].Image_file" alt="@player.PlayerModel[i].ID" />
+                    <div class="player_info">
+                        <h2>@player.PlayerModel[i].PlayerName</h2>
+                        <p>Bowl: @player.PlayerModel[i].Ball</p>
+                        <p>Bat: @player.PlayerModel[i].Bat</p>
                     </div>
-                </div>i++;
-            }
-        </div>
-    </section>
+                </div>
+            </div>i++;
+        }
+    </div>
+</section>
 }
 
 

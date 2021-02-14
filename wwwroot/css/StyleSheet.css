@@ -554,6 +554,7 @@ section {
 
 .block h2{
     padding: 0 0 2rem;
+    font-weight: 900;
 }
 .blocks .block:nth-child(even) {
     background: rgba(0,0,0,0.05);
@@ -801,6 +802,10 @@ section {
 .gallery_container_small {
     justify-items: normal;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.gallery_container_small h3{
+    font-weight: 900;
+    padding: 10px 0;
 }
 
 .players_gallery .profile_container h2, .players_gallery .player_container p {

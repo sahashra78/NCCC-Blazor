@@ -84,7 +84,7 @@ nav {
     position: fixed;
     background: rgba(255,255,255,0.65);
     top: 0;
-    height: 75px;
+    height: 90px;
     width: 100%;
     z-index: 1;
     padding: 3px 0;
@@ -100,7 +100,7 @@ nav {
 .nav_logo {
     width: 80px;
     height: auto;
-    padding: 8px 0 5px;
+    padding: 16px 0 12px;
     transition: filter 200ms ease-in-out;
 }
 
@@ -414,7 +414,7 @@ nav {
 
 header {
     position: relative;
-    margin: 75px 0 0 0;
+    margin: 90px 0 0 0;
     height: 350px;
     overflow: hidden;
     background-position: center center;
@@ -542,7 +542,6 @@ section {
     font-size: 45px;
     margin: 20px auto;
     color: #333;
-    text-shadow: 1.5px 1.5px 1px #000;
 }
 
 .section_sub_heading {
@@ -1064,7 +1063,7 @@ section {
 footer {
     background: #143582;
     color: #fff;
-    padding: 10px;
+    padding: 20px 0;
 }
 
 .footer_content {

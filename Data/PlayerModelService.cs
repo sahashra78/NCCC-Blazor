@@ -27,6 +27,5 @@ namespace NCCC_Blazor.Data
             }).ToArray());
 
         }
-
     }
 }

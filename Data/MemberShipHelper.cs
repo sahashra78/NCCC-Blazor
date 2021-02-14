@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -22,8 +23,14 @@ namespace NCCC_Blazor.Data
         public string Address { get; set; }
         public string Message { get; set; }
         public string MembershipType { get; set; }
+        public string PaymentMethod { get; set; }
 
-
+        private static IConfiguration config;
+        public MemberShipHelper(IConfiguration configuration)
+        {
+            config = configuration;
+        }
+        
 
         //save records to csv file 
         //(membershipHelper memerinfo if you use obkect 
@@ -31,21 +38,20 @@ namespace NCCC_Blazor.Data
         {
             string currentYear = DateTime.Now.Year.ToString();
             string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
-            var filePath = Path.Combine(Environment.CurrentDirectory, "../NCCC-Blazor/Data/MembershipRecords/") + "MembershipRecord" + currentYear + ".csv";
-            string csvContent = string.Format("{0},{1},{2},{3},{4},{5},{6}", Name, Email, Phone, Address, Message, currentDate, MembershipType);
+            var filePath = Path.Combine(Environment.CurrentDirectory, "../NCCC-Blazor/wwwroot/MembershipRecords/") + "MembershipRecord" + currentYear + ".csv";
+            string csvContent = string.Format("{0},{1},{2},{3},{4},{5},{6},{7}", Name, Email, Phone, Address, Message, currentDate, MembershipType, PaymentMethod);
             if (File.Exists(filePath))
             {
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine(csvContent);
                 File.AppendAllText(filePath, sb.ToString());
                 sb.Clear();
-
             }
             else
             {
                 File.Create(filePath).Dispose();
                 StringBuilder sb = new StringBuilder();
-                sb.AppendLine("Name,EmailAddress,Phone,Address,Message,RecordDate,MembershipType");
+                sb.AppendLine("Name,EmailAddress,Phone,Address,Message,RecordDate,MembershipType,PaymentMethod");
                 sb.AppendLine(csvContent);
                 File.AppendAllText(filePath, sb.ToString());
                 sb.Clear();
@@ -59,19 +65,18 @@ namespace NCCC_Blazor.Data
         //save port details in webconfig 
         public void SendEmail(MemberShipHelper memberShipHelper)
         {
-            string fromaddress = ConfigurationManager.AppSettings["FromEmail"]; //mail server ypou are using 
-            string toaddress = ConfigurationManager.AppSettings["ToEmail"]; //president /screatary //you can separate it by colon
-            string smtpmailserver = ConfigurationManager.AppSettings["SMTPServerName"]; //for outlook smtp-mail.outlook.com//check how to find email smtp server //google it or check the email header 
-            // use no reply email address // finds smtp server name 
-            int portnumber = Convert.ToInt32(ConfigurationManager.AppSettings["PortNumber"]);//587 is for outlook/microsoft, search for our mail server 
-            string password = ConfigurationManager.AppSettings["FromEmailPassword"];
+            string fromaddress = config.GetValue<string>("EmailConfig:FromEmail").ToString();  //mail server ypou are using 
+            string toaddress = config.GetValue<string>("EmailConfig:ToEmail").ToString(); //president /screatary //you can separate it by colon
+            string smtpmailserver = config.GetValue<string>("EmailConfig:SMTPServerName"); //for outlook smtp-mail.outlook.com//check how to find email smtp server //google it or check the email header 
+            int portnumber = Convert.ToInt32(config.GetValue<string>("EmailConfig:PortNumber")); //587 is for outlook/microsoft, search for our mail server 
+            string password = config.GetValue<string>("EmailConfig:FromEmailPassword");
             string currentDate = DateTime.Now.ToString("yyyy-MM-dd hh:mm tt");
             using (MailMessage mail = new MailMessage())
             {
                 mail.From = new MailAddress(fromaddress);
                 mail.To.Add(toaddress);
                 mail.Subject = "Membership Request";
-                mail.Body = $"Following membership request has been submitted. \n\nName: {Name} \nEmail: {Email} \nPhones: {Phone} \n Address: {Address} \nMessage: {Message} \nMembership Type: {MembershipType} \nRequest Submitted On: {currentDate}";  //use the info from the ajax req parameter above  
+                mail.Body = $"Following membership request has been submitted. \n\nName: {Name} \nEmail: {Email} \nPhones: {Phone} \n Address: {Address} \nMessage: {Message} \nMembership Type: {MembershipType} \nRequest Submitted On: {currentDate} \nPayment Method: {PaymentMethod}";  //use the info from the ajax req parameter above  
                 mail.IsBodyHtml = false;
 
                 using (SmtpClient client = new SmtpClient(smtpmailserver, portnumber))
@@ -83,37 +88,16 @@ namespace NCCC_Blazor.Data
             }
         }
 
-        MemberShipHelper membershiphelper = new MemberShipHelper();
-        [HttpPost]
-        public ActionResult EmailandSaveRecords(string Name, string Email, string Phone, string Address, string Message, string MembershipType)
-        {
-            membershiphelper.Name = Name;
-            membershiphelper.Email = Email;
-            membershiphelper.Phone = Phone;
-            membershiphelper.Address = Address;
-            membershiphelper.Message = Message;
-            membershiphelper.MembershipType = MembershipType;
-
-            var isrecordsaved = membershiphelper.SaveRecordstoCsvFile(membershiphelper);
-            if (!isrecordsaved)
-            {
-
-            }
-            membershiphelper.SendEmail(membershiphelper);
-            membershiphelper.SendEmailToMember(membershiphelper);
-            return null;
-        }
 
         public void SendEmailToMember(MemberShipHelper memberShipHelper)
         {
             if (!string.IsNullOrEmpty(Email))
             {
-                string fromaddress = ConfigurationManager.AppSettings["FromEmail"]; ;//mail server ypou are using 
-                string toaddress = Email; //president /screatary //you can separate it by colon
-                string smtpmailserver = ConfigurationManager.AppSettings["SMTPServerName"]; ;//for outlook smtp-mail.outlook.com//check how to find email smtp server //google it or check the email header 
-                                                                                             // use no reply email address // finds smtp server name 
-                int portnumber = Convert.ToInt32(ConfigurationManager.AppSettings["PortNumber"]);//587 is for outlook/microsoft, search for our mail server 
-                string password = ConfigurationManager.AppSettings["FromEmailPassword"];
+                string fromaddress = config.GetValue<string>("EmailConfig:FromEmail");  //mail server you are using 
+                string toaddress = Email;
+                string smtpmailserver = config.GetValue<string>("EmailConfig:SMTPServerName"); //for outlook smtp-mail.outlook.com//check how to find email smtp server //google it or check the email header 
+                int portnumber = Convert.ToInt32(config.GetValue<string>("EmailConfig:PortNumber")); //587 is for outlook/microsoft, search for our mail server 
+                string password = config.GetValue<string>("EmailConfig:FromEmailPassword");
                 string currentDate = DateTime.Now.ToString("yyyy-MM-dd hh:mm tt");
 
                 using (MailMessage mail = new MailMessage())
@@ -121,7 +105,7 @@ namespace NCCC_Blazor.Data
                     mail.From = new MailAddress(fromaddress);
                     mail.To.Add(toaddress);
                     mail.Subject = "NCCC Membership Request Submitted";
-                    mail.Body = $"Your membership request has been submitted. Below is your submitted information. \n\nName: {Name} \nEmail: {Email} \nPhones: {Phone} \n Address: {Address} \nMessage: {Message} \nMembership Type: {MembershipType} \nRequest Submitted On: {currentDate}";  //use the info from the ajax req parameter above  
+                    mail.Body = $"Your membership request has been submitted. Below is your submitted information. \n\nName: {Name} \nEmail: {Email} \nPhones: {Phone} \n Address: {Address} \nMessage: {Message} \nMembership Type: {MembershipType} \nRequest Submitted On: {currentDate} \nPayment Method: {PaymentMethod}";  //use the info from the ajax req parameter above  
                     mail.IsBodyHtml = false;
 
                     using (SmtpClient client = new SmtpClient(smtpmailserver, portnumber))

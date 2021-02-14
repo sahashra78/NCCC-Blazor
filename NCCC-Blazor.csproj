@@ -19,4 +19,12 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\MembershipRecords\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\MembershipRecords\MembershipRecord2021.csv" />
+  </ItemGroup>
+
 </Project>

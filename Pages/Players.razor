@@ -15,32 +15,153 @@
 else
 {
     int i = 0;
-
     <section>
         <div class="wrapper gallery_container players_gallery">
             @foreach (var player in players)
             {
-                <div class="profile_container tilt" data-tilt>
-                    <a href="@GetHref(player.PlayerModel[i].ID)">
+                string playerId = player.PlayerModel[i].ID;
+                <div class="profile_container tilt" data-tilt @onclick="() => showPlayer(playerId)">
+                    <div id="@player.PlayerModel[i].ID">
                         <img src="../Static/Images/players/@player.PlayerModel[i].Image_file" alt="@player.PlayerModel[i].ID" />
                         <div class="player_info">
                             <h2>@player.PlayerModel[i].PlayerName</h2>
                             <p>Bowl: @player.PlayerModel[i].Ball</p>
                             <p>Bat: @player.PlayerModel[i].Bat</p>
                         </div>
-                    </a>
+                    </div>
                 </div>i++;
             }
         </div>
     </section>
 }
 
-<AnchorNavigation />
 
+<div class="blocks wrapper">
+    @{ int j = 0;
+        string pid = selectedID;
+    }
+    @foreach (var player in players)
+    {
+        if (pid == player.PlayerModel[j].ID)
+        {
+            <div class="popUp" id="@player.PlayerModel[j].ID">
+                <div>
+                    <span class="close" @onclick="() => removePlayer()"><i class="fas fa-times"></i></span>
+                    <div class="profile_info_container">
+                        <div class="tilt" data-tilt>
+                            <img src="../Static/Images/players/@player.PlayerModel[j].Image_file" class="responsive" alt="@player.PlayerModel[j].ID" />
+                        </div>
+                        <div class="player_information">
+                            <h2>@player.PlayerModel[j].PlayerName</h2>
+                            <br />
+                            <p><strong>Role:</strong> @player.PlayerModel[j].Role</p>
+                            <p><strong>Bowling Style:</strong> @player.PlayerModel[j].Ball</p>
+                            <p><strong>Batting Style:</strong> @player.PlayerModel[j].Bat</p>
+                            <p><strong>Club:</strong> @player.PlayerModel[j].Club</p>
+                            <p><strong>Team:</strong> @player.PlayerModel[j].Team</p>
+                        </div>
+                    </div>
+                    <div id="no-more-tables">
+                        <h4 class="center">BATTING</h4>
+                        <table class="table center">
+                            <thead>
+                                <tr>
+                                    <th>MATCHES</th>
+                                    <th>INNINGS</th>
+                                    <th>RUN SCORED</th>
+                                    <th>4's</th>
+                                    <th>6's</th>
+                                    <th>STRIKE RATE</th>
+                                    <th>50'S</th>
+                                    <th>HUNDRED</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-title="MATCHES">@player.PlayerModel[j].Batting.Matches</td>
+                                    <td data-title="INNINGS">@player.PlayerModel[j].Batting.Innings</td>
+                                    <td data-title="RUN SCORED">@player.PlayerModel[j].Batting.RunScored</td>
+                                    <td data-title="4's">@player.PlayerModel[j].Batting.Fours</td>
+                                    <td data-title="6's">@player.PlayerModel[j].Batting.Sixs</td>
+                                    <td data-title="STRIKE RATE">@player.PlayerModel[j].Batting.StrikeRate</td>
+                                    <td data-title="50's">@player.PlayerModel[j].Batting.Fifties</td>
+                                    <td data-title="HUNDRED">@player.PlayerModel[j].Batting.Hundred</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="center">BLOWING</h4>
+                        <table class="table center">
+                            <thead>
+                                <tr>
+                                    <th>MATCHES</th>
+                                    <th>INNINGS</th>
+                                    <th>BALLS</th>
+                                    <th>5 WICKET</th>
+                                    <th>RUNS</th>
+                                    <th>MAIDENS</th>
+                                    <th>WICKET</th>
+                                    <th>ECONOMY</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-title="MATCHES">@player.PlayerModel[j].Bowling.Matches</td>
+                                    <td data-title="INNINGS">@player.PlayerModel[j].Bowling.Innings</td>
+                                    <td data-title="BALLS">@player.PlayerModel[j].Bowling.Balls</td>
+                                    <td data-title="5 WICKET">@player.PlayerModel[j].Bowling.FiveWicket</td>
+                                    <td data-title="RUNS">@player.PlayerModel[j].Bowling.Runs</td>
+                                    <td data-title="MAIDENS">@player.PlayerModel[j].Bowling.Maidens</td>
+                                    <td data-title="WICKET">@player.PlayerModel[j].Bowling.Wicket</td>
+                                    <td data-title="ECONOMY">@player.PlayerModel[j].Bowling.Economy</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="center">FIELDING</h4>
+                        <table class="table center">
+                            <thead>
+                                <tr>
+                                    <th>MATCHES</th>
+                                    <th>INNINGS</th>
+                                    <th>CATCHES</th>
+                                    <th>RAN OUT</th>
+                                    <th>STUMP</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-title="MATCHES">@player.PlayerModel[j].Fielding.Matches</td>
+                                    <td data-title="INNINGS">@player.PlayerModel[j].Fielding.Innings</td>
+                                    <td data-title="CATCHES">@player.PlayerModel[j].Fielding.Catches</td>
+                                    <td data-title="RAN OUT">@player.PlayerModel[j].Fielding.RanOut</td>
+                                    <td data-title="STUMP">@player.PlayerModel[j].Fielding.Stump</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        }
+
+        j++;
+    }
+</div>
+
+<AnchorNavigation />
 @code { private PlayerList[] players;
 
-    string GetId(String s) => "#" + s;
-    string GetHref(String s) => "PlayerProfile" + GetId(s);
+    private string selectedID;
+
+    void showPlayer(String id)
+    {
+        selectedID = id;
+    }
+    void removePlayer()
+    {
+        selectedID = "";
+    }
+
+    //string GetId(String s) => "#" + s;
+    //string GetHref(String s) => "PlayerProfile" + GetId(s);
 
     protected override async Task OnInitializedAsync()
     {
@@ -53,9 +174,13 @@ else
 @code {
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeVoidAsync("TiltListener");
-        }
+        //if (firstRender)
+        //{
+        //    await JSRuntime.InvokeVoidAsync("TiltListener");
+        //    await JSRuntime.InvokeVoidAsync("contactPopUpListener");
+        //}
+
+        await JSRuntime.InvokeVoidAsync("contactPopUpListener");
+        await JSRuntime.InvokeVoidAsync("TiltListener");
     }
 }

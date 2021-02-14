@@ -196,15 +196,11 @@ function MembershipFormListener() {
     $(document).ready(function () {
         checkFields();
         function checkFields() {
-            if ($('#fullname').val().length > 0 && $('#email').val().length > 0 && $('#phone').val().length > 0) {
-                $('#submitBtn').prop('disabled', false).addClass('enabled paypal_button').removeClass('disabled');
-                $('#generalSubmitMembership').prop('disabled', false).addClass('enabled paypal_button').removeClass('disabled');
-                $('#playerSubmitMembership').prop('disabled', false).addClass('enabled paypal_button').removeClass('disabled');
+            if ($('#fullname').val().length > 0 && $('#email').val().length > 0 && validateEmail($('#email').val()) && $('#phone').val().length > 0) {
+                enableSubmit()
             }
             else {
-                $('#submitBtn').prop('disabled', true).addClass('disabled').removeClass('enabled');
-                $('#generalSubmitMembership').prop('disabled', true).addClass('disabled').removeClass('enabled');
-                $('#playerSubmitMembership').prop('disabled', true).addClass('disabled').removeClass('enabled');
+                disableSubmit();
             }
         }
         $('#fullname').on('change', function () {
@@ -216,17 +212,32 @@ function MembershipFormListener() {
         $('#phone').on('change', function () {
             checkFields();
         });
+        function enableSubmit() {
+            $('#submitBtn').prop('disabled', false).addClass('enabled paypal_button').removeClass('disabled');
+            $('#generalSubmitMembership').prop('disabled', false).addClass('enabled paypal_button').removeClass('disabled');
+            $('#playerSubmitMembership').prop('disabled', false).addClass('enabled paypal_button').removeClass('disabled');
+        }
+        function disableSubmit() {
+            $('#submitBtn').prop('disabled', true).addClass('disabled').removeClass('enabled paypal_button');
+            $('#generalSubmitMembership').prop('disabled', true).addClass('disabled').removeClass('enabled paypal_button');
+            $('#playerSubmitMembership').prop('disabled', true).addClass('disabled').removeClass('enabled paypal_button');
+        }
         $('#paid').on('change', function () {
             if ($(this).is(':checked')) {
                 $('#paymentMethod').prop('disabled', false);
+                $('#paymentMethod').val('');
                 $('#paymentMethod').addClass('enabled').removeClass('disabled');
+                $('#paymentMethod').css('opacity', 1);
+                $('#paymentMethodLabel').css('opacity', 1);
                 $('#paymentMethodLabel').addClass('enabled').removeClass('disabled');
                 defaultSubmit();
             }
             else {
                 $('#paymentMethod').prop('disabled', true);
-                $('#paymentMethod').val('');
+                $('#paymentMethod').val('Pay Pal');
                 $('#paymentMethod').addClass('disabled').removeClass('enabled');
+                $('#paymentMethod').css('opacity', 0);
+                $('#paymentMethodLabel').css('opacity', 0);
                 $('#paymentMethodLabel').addClass('disabled').removeClass('enabled');
                 checkMembership();
             }
@@ -263,28 +274,56 @@ function MembershipFormListener() {
             $('#playerMembership').css('display', 'none');
             $('#generalMembership').css('display', 'block');
         }
-
-        //string Name, string Email, string Phone, string Address, string Message
-        function sendEmail(e) {
-            $.ajax({
-                url: '/Home/EmailandSaveRecords',
-                type: 'POST',
-                data: { Name: $('#fullname').val(), Email: $('#email').val(), Phone: $('#phone').val(), Address: $('#address').val(), Message: $('#message').val(), MembershipType: $('#membershipType').val() },
-                success: function (data) { },
-                error: function (xhr) { }
-            });
-            alert('ter');
+        function clearFields() {
+            $('#fullname').val(null);
+            $('#email').val(null);
+            $('#phone').val(null);
+            $('#membershipType').val("player");
+            $('#message').val(null);
+            $('#address').val(null);
+            $('#paid').prop('checked', false);
+            $('#paymentMethod').prop('disabled', true);
+            $('#paymentMethod').val('');
+            $('#paymentMethod').addClass('disabled').removeClass('enabled');
+            $('#paymentMethodLabel').addClass('disabled').removeClass('enabled');
+            defaultSubmit();
+            setTimeout(disableSubmit, 500);
         }
+        function validateEmail($email) {
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            return emailReg.test($email);
+        }
+
+        ////string Name, string Email, string Phone, string Address, string Message
+        //function sendEmail(e) {
+        //    $.ajax({
+        //        url: '/Home/EmailandSaveRecords',
+        //        type: 'POST',
+        //        data: { Name: $('#fullname').val(), Email: $('#email').val(), Phone: $('#phone').val(), Address: $('#address').val(), Message: $('#message').val(), MembershipType: $('#membershipType').val() },
+        //        success: function (data) { },
+        //        error: function (xhr) { }
+        //    });
+        //    alert('ter');
+        //}
         $('#submitBtn').click(function (e) {
-            sendEmail();
+            clearFields();
         });
         $('#playerSubmitMembership').click(function (e) {
-            sendEmail();
+            clearFields();
         });
         $('#generalSubmitMembership').click(function (e) {
-            sendEmail();
+            clearFields();
         });
     });
+}
+function contactPopUpListener() {
+    //$('.profile_container').on('click', function () {
+    //    let id = $(this).children("div").attr("id");
+    //    $($('div #'+id).css('display', 'block'));
+    //});
 
 
+    //$('.close').on('click', function () {
+    //    $($('.popUp').css('display', 'none'));
+    //});
 }

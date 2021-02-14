@@ -1,7 +1,7 @@
 ﻿@page "/Membership"
 @using NCCC_Blazor.Data
-
-@inject MemberShipHelper _memService
+@inject MemberShipHelperService MembershipServices
+@inject IConfiguration Configuration
 
 <header class="membership_header header">
     <div class="header_content">
@@ -16,54 +16,77 @@
     </div>
     <br /><br /><br />
 
-    <div class="area3Content area1Content">
-        Full Name* :<input type="text" id="fullname" placeholder="FullName" value="" /><br />
-        Email Address*:<input type="text" id="email" placeholder="abc@abc.com" /><br />
-        Phone Number*:<input type="text" id="phone" placeholder="8888888888" /><br />
-        Address:<input type="text" id="address" placeholder="123 Home Address" /><br />
-        Message:<textarea type="text" rows="4" maxlength="200" id="message" placeholder="Type you Message"></textarea><br />
+    <div class="membership_form wrapper" id="membership_form">
+        <h2 class="center">Get Membership</h2>
+        <br /><br />
+        <div class="flex center">
+            <div><p class="no_wrap">Full Name* :</p><input type="text" @bind="memberName" id="fullname" placeholder="FullName" /></div>
+            <div><p class="no_wrap">Email Address*:</p><input type="email" @bind="memberEmail" id="email" placeholder="name@email.com" /></div>
+        </div>
+        <div class="flex center">
+            <div><p class="no_wrap">Phone Number*:</p><input type="number" id="phone" @bind="memberPhone" placeholder="9876543210" /></div>
+            <div><p class="no_wrap">Address:</p><input type="text" id="address" @bind="memberAddress" placeholder="123 Home Address" /></div>
+        </div>
+        <p class="no_wrap">Message:</p><textarea type="text" rows="4" maxlength="200" id="message" @bind="memberMessage" placeholder="Type you Message"></textarea>
         <div id="membershipTypeBlock">
-            Membership Type: <select id="membershipType">
-                <option></option>
-                <option value="player">Player Membership</option>
-                <option value="general">General Membership</option>
+            Membership Type: <select id="membershipType" @bind="TypeOfMembership">
+                <option value="@membershipType.player">Player Membership ($100.00)</option>
+                <option value="@membershipType.general">General Membership ($25.00)</option>
             </select>
         </div>
-        <input type="checkbox" id="paid" name="paid" value="false" /> <span>I've already paid the fees.</span>
-        <p class="disabled" id="paymentMethodLabel">Please specify your payment method:</p>
-        <input class="disabled" id="paymentMethod" type="text" name="paymentMethod" placeholder="eg:(PayPal, e-Transfer, Cash, ...)" disabled />
-
-        <input class="disabled button" type="submit" name="submit" value="Submit" id="submitBtn" />
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="playerMembership" style="display:none">
+        <input type="checkbox" id="paid" name="paid" value="false" @bind="checkbox" /> <span>I've already paid the fees.</span>
+        <p class="disabled" id="paymentMethodLabel" style="opacity: 0;">Please specify your payment method:</p>
+        <input class="disabled" id="paymentMethod" type="text" name="paymentMethod" @bind="paymentMethod" placeholder="eg:(PayPal, e-Transfer, Cash, ...)" disabled  style="opacity:0;" />
+        <br /><br />
+        <input class="disabled button" type="submit" @onclick="@AddMember" name="submit" value="Submit Membership Request" id="submitBtn"  style="display:none" />
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_self" id="playerMembership">
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="Z3J4KTXJ87W8N">
-            <input class="disabled button" type="submit" value="Pay Now" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" id="playerSubmitMembership">
+            <input class="disabled button" type="submit" @onclick="@AddMember" value="Pay Now with Pay Pal" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" id="playerSubmitMembership">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="generalMembership" style="display:none">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_self" id="generalMembership" style="display:none">
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="DDJJLNUMQWZUQ">
-            <input class="disabled button" type="submit" value="Pay Now" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" id="generalSubmitMembership">
+            <input class="disabled button" type="submit" @onclick="@AddMember" value="Pay Now with Pay Pal" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" id="generalSubmitMembership">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
     </div>
     <br />
 
-    <div class="wrapper gallery_container gallery_container_small">
-        <div class="box center no_wrap">
-            <h2>Player Membership</h2>
-            <p>Player Membership - $100.00</p>
-            <a class="button paypal_button" href="https://www.paypal.com/webapps/hermes?token=6PJ58207X7716835R&useraction=commit&rm=1&mfid=1593385992327_50dc93fa28cd0">
-                <img src="../Static/Images/Logos/paypal.png" /><span>&nbsp;&nbsp;&nbsp;Get Membership Now </span>
-            </a>
-        </div>
-        <div class=" box center no_wrap">
-            <h2>General Membership</h2>
-            <p>General Membership - $25.00</p>
-            <a class="button paypal_button" href="https://www.paypal.com/webapps/hermes?token=82P28942DB289960H&useraction=commit&rm=1&mfid=1593388668477_49c64ff3e614">
-                <img src="../Static/Images/Logos/paypal.png" /><span>&nbsp;&nbsp;&nbsp;Get Membership Now </span>
-            </a>
-        </div>
-    </div>
 </section>
+
+
+@inject IJSRuntime JSRuntime
+@code {
+
+    private String memberName;
+    private String memberEmail;
+    private String memberPhone;
+    private String memberAddress;
+    private String memberMessage;
+    private bool checkbox;
+    private enum membershipType { player, general };
+    private membershipType TypeOfMembership { get; set; } = membershipType.player;
+    private String paymentMethod = "Pay Pal";
+
+    private void AddMember()
+    {
+        if (!checkbox)
+        {
+            paymentMethod = "Pay Pal";
+        }
+        var addMember = new MemberShipHelper(Configuration) { Name = memberName, Email = memberEmail, Phone = memberPhone, Address = memberAddress, Message = memberMessage, MembershipType = TypeOfMembership.ToString(), PaymentMethod = paymentMethod };
+        MembershipServices.EmailandSaveRecords(addMember);
+    }
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("MembershipFormListener");
+        }
+    }
+}
 

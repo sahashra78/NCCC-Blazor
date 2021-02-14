@@ -6,8 +6,15 @@
     </div>
 </header>
 <section>
-    <input type="file" id="upload_csv" accept=".csv" />
-    <button id="button_upload_csv">Upload CSV</button>
+    @*<input type="file" id="upload_csv" accept=".csv" />
+    <button id="button_upload_csv">Upload CSV</button>*@
+
+    <div class="center">
+        <p>Click the button to download excel file containing all the membership request submission data.</p>
+        <a class="button paypal_button" href="/MembershipRecords/MembershipRecord2021.csv" download="MembershipRecord.csv" target="_top">
+            <span>Download Membership Record &nbsp;&nbsp;&nbsp;<i class="fas fa-download"></i></span>
+        </a>
+    </div>
 </section>
 
 
@@ -15,11 +22,11 @@
 @inject IJSRuntime JSRuntime
 
 @code {
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeVoidAsync("PapaParseListener");
-        }
-    }
+    //protected override async Task OnAfterRenderAsync(bool firstRender)
+    //{
+    //    if (firstRender)
+    //    {
+    //        await JSRuntime.InvokeVoidAsync("PapaParseListener");
+    //    }
+    //}
 }

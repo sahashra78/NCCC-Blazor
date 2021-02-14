@@ -18,7 +18,7 @@ namespace NCCC_Blazor.Data
         //public List<PlayerModel> player;
         public Task<PlayerList[]> GetPlayers()
         {
-            string json = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "../NCCC-Blazor/Data/PlayersList.json"));
+            string json = System.IO.File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "./Data/PlayersList.json"));
             PlayerList player = Newtonsoft.Json.JsonConvert.DeserializeObject<PlayerList>(json);
 
             return Task.FromResult(Enumerable.Range(1, player.PlayerModel.Count()).Select(index => new PlayerList

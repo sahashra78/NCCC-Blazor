@@ -38,7 +38,7 @@ namespace NCCC_Blazor.Data
         {
             string currentYear = DateTime.Now.Year.ToString();
             string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
-            var filePath = Path.Combine(Environment.CurrentDirectory, "../NCCC-Blazor/wwwroot/MembershipRecords/") + "MembershipRecord" + currentYear + ".csv";
+            var filePath = Path.Combine(Environment.CurrentDirectory, "./wwwroot/MembershipRecords/") + "MembershipRecord" + currentYear + ".csv";
             string csvContent = string.Format("{0},{1},{2},{3},{4},{5},{6},{7}", Name, Email, Phone, Address, Message, currentDate, MembershipType, PaymentMethod);
             if (File.Exists(filePath))
             {

@@ -74,6 +74,11 @@ html, body {
     width: 1500px;
     margin: 0 auto;
 }
+
+    .wrapper h2 {
+        font-size: 40px;
+        padding-bottom: 2rem;
+    }
 /* Navigation Bar */
 nav {
     position: fixed;
@@ -454,13 +459,22 @@ header {
     line-height: 30px;
 }
 
-.heading {
+.big_head {
     font-size: 50px;
     line-height: 50px;
 }
 
+.heading {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+
+
 .sub_heading {
+    font-size:30px;
     font-weight: 400;
+    
 }
 
 @media screen and (max-width: 850px) {
@@ -508,7 +522,7 @@ header {
 }
 /* --- Section --- */
 section {
-    margin: 100px auto;
+    margin: 100px auto 150px;
 }
 
 .blocks .block:nth-child(even) {
@@ -950,7 +964,14 @@ section {
     cursor: pointer;
     transition: 300ms ease-in-out;
 }
-
+    .board_profile_container h2 {
+        font-size:24px;
+        padding-bottom:0px;
+    }
+    .board_profile_container h3 {
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
     .board_profile_container img {
         border-radius: 10px 10px 0 0;
     }
@@ -961,7 +982,7 @@ section {
     }
 
 .member_information {
-    padding: 2px 16px;
+    padding: 8px 16px 20px;
 }
 
 /* --- Membership Form --- */

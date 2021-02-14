@@ -473,9 +473,6 @@ header {
     text-shadow: 2px 3px 2px #000;
 }
 
-    .header_content p {
-        font-size: 23px;
-    }
 
 .big_heading {
     font-size: 50px;
@@ -507,10 +504,17 @@ header {
         line-height: 20px;
         width: 60%;
     }
-
+    .big_heading {
+        font-size: 35px;
+        line-height: 35px;
+    }
     .heading {
         font-size: 30px;
         line-height: 30px;
+    }
+    .sub_heading {
+        font-size: 20px;
+        line-height: 20px;
     }
 
     .hero_image {
@@ -558,6 +562,23 @@ section {
 }
 .blocks .block:nth-child(even) {
     background: rgba(0,0,0,0.05);
+}
+@media screen and (max-width: 850px){
+    .section_heading{
+        font-size: 35px;
+    }
+    .section_sub_heading{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .section_heading {
+        font-size: 25px;
+    }
+
+    .section_sub_heading {
+        font-size: 15px;
+    }
 }
 /* --- Container --- */
 .container {

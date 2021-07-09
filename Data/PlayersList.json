@@ -75,6 +75,43 @@
       }
     },
     {
+      "ID": "anil-thapa",
+      "PlayerName": "Anil Thapa",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "anil-thapa.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "TEAM EVEREST",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
       "ID": "arambha-shrestha",
       "PlayerName": "Arambha Shrestha",
       "Role": "Academy",
@@ -146,6 +183,43 @@
         "Catches": 4,
         "RanOut": 1,
         "Stump": 1
+      }
+    },
+    {
+      "ID": "binay-yadav",
+      "PlayerName": "Binay Yadav",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "binay-yadav.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
       }
     },
     {
@@ -223,6 +297,43 @@
       }
     },
     {
+      "ID": "bipin-amatya",
+      "PlayerName": "Bipin Amatya",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "bipin-amatya.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
       "ID": "chandra-chapagai",
       "PlayerName": "Chandra Chapagai",
       "Role": "All Rounder",
@@ -260,12 +371,197 @@
       }
     },
     {
+      "ID": "chetanya-sharma",
+      "PlayerName": "Chetanya Sharma",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "chetanya-sharma.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "dhirendra-giri",
+      "PlayerName": "Dhirendra Giri",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "dhirendra-giri.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "dipesh-khanal",
+      "PlayerName": "Dipesh Khanal",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "dipesh-khanal.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
       "ID": "Gopal-Sunar",
       "PlayerName": "Gopal Sunar",
       "Role": "Wicket Keeper",
       "Ball": "No Specific Style",
       "Bat": "Right-handed",
       "Image_file": "Gopal-Sunar.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "havenpreet",
+      "PlayerName": "Havenpreet",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "havenpreet.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "hem-jha",
+      "PlayerName": "Hem Jha",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "hem-jha.jpg",
       "Club": "Nepalese Canadian Cricket Club",
       "Team": "NO TEAM",
       "Batting": {
@@ -366,6 +662,43 @@
         "Matches": 3,
         "Innings": 3,
         "Catches": 1,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "kripansh-sharma",
+      "PlayerName": "Kripansh Sharma",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "kripansh-sharma.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
         "RanOut": 0,
         "Stump": 0
       }
@@ -556,6 +889,80 @@
       }
     },
     {
+      "ID": "manjit-singh",
+      "PlayerName": "Manjit Singh",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "manjit-singh.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "mariano",
+      "PlayerName": "Mariano",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "mariano.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
       "ID": "mohan-gurung",
       "PlayerName": "Mohan Gurung",
       "Role": "Wicket Keeper",
@@ -592,43 +999,43 @@
         "Stump": 0
       }
     },
-    {
-      "ID": "naresh-budhayer",
-      "PlayerName": "Naresh Budhayer",
-      "Role": "All Rounder",
-      "Ball": "Right-arm off spin",
-      "Bat": "Right-handed",
-      "Image_file": "naresh-budhayer.jpg",
-      "Club": "Nepalese Canadian Cricket Club",
-      "Team": "TEAM EVEREST",
-      "Batting": {
-        "Matches": 9,
-        "Innings": 8,
-        "RunScored": 315,
-        "Fours": 29,
-        "Sixs": 7,
-        "StrikeRate": 141.3,
-        "Fifties": 1,
-        "Hundred": 0
-      },
-      "Bowling": {
-        "Matches": 9,
-        "Innings": 6,
-        "Balls": 132,
-        "FiveWicket": 0,
-        "Runs": 124,
-        "Maidens": 3,
-        "Wicket": 6,
-        "Economy": 5.6
-      },
-      "Fielding": {
-        "Matches": 9,
-        "Innings": 9,
-        "Catches": 4,
-        "RanOut": 2,
-        "Stump": 1
-      }
-    },
+    //{
+    //  "ID": "naresh-budhayer",
+    //  "PlayerName": "Naresh Budhayer",
+    //  "Role": "All Rounder",
+    //  "Ball": "Right-arm off spin",
+    //  "Bat": "Right-handed",
+    //  "Image_file": "naresh-budhayer.jpg",
+    //  "Club": "Nepalese Canadian Cricket Club",
+    //  "Team": "TEAM EVEREST",
+    //  "Batting": {
+    //    "Matches": 9,
+    //    "Innings": 8,
+    //    "RunScored": 315,
+    //    "Fours": 29,
+    //    "Sixs": 7,
+    //    "StrikeRate": 141.3,
+    //    "Fifties": 1,
+    //    "Hundred": 0
+    //  },
+    //  "Bowling": {
+    //    "Matches": 9,
+    //    "Innings": 6,
+    //    "Balls": 132,
+    //    "FiveWicket": 0,
+    //    "Runs": 124,
+    //    "Maidens": 3,
+    //    "Wicket": 6,
+    //    "Economy": 5.6
+    //  },
+    //  "Fielding": {
+    //    "Matches": 9,
+    //    "Innings": 9,
+    //    "Catches": 4,
+    //    "RanOut": 2,
+    //    "Stump": 1
+    //  }
+    //},
     {
       "ID": "niraj-lama",
       "PlayerName": "Niraj Lama",
@@ -700,6 +1107,43 @@
         "Innings": 8,
         "Catches": 3,
         "RanOut": 4,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "prakash-nepal",
+      "PlayerName": "Prakash Nepal",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "prakash-nepal.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
         "Stump": 0
       }
     },
@@ -778,12 +1222,123 @@
       }
     },
     {
+      "ID": "raj-karki",
+      "PlayerName": "Raj Karki",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "raj-karki.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "ramkrishna-poudel",
+      "PlayerName": "Ramkrishna Poudel",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "ramkrishna-poudel.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
       "ID": "rejish-ranjit",
       "PlayerName": "Rejish Ranjit",
       "Role": "Bowler",
       "Ball": "Right-arm leg spin",
       "Bat": "Right-handed",
       "Image_file": "rejish-ranjit.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "ritesh-chaudhary",
+      "PlayerName": "Ritesh Chaudhary",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "ritesh-chaudhary.jpg",
       "Club": "Nepalese Canadian Cricket Club",
       "Team": "NO TEAM",
       "Batting": {
@@ -895,6 +1450,43 @@
       "Ball": "Right-arm off break",
       "Bat": "Right-handed",
       "Image_file": "samundra-manandhar.jpg",
+      "Club": "Nepalese Canadian Cricket Club",
+      "Team": "NO TEAM",
+      "Batting": {
+        "Matches": 0,
+        "Innings": 0,
+        "RunScored": 0,
+        "Fours": 0,
+        "Sixs": 0,
+        "StrikeRate": 0,
+        "Fifties": 0,
+        "Hundred": 0
+      },
+      "Bowling": {
+        "Matches": 0,
+        "Innings": 0,
+        "Balls": 0,
+        "FiveWicket": 0,
+        "Runs": 0,
+        "Maidens": 0,
+        "Wicket": 0,
+        "Economy": 0
+      },
+      "Fielding": {
+        "Matches": 0,
+        "Innings": 0,
+        "Catches": 0,
+        "RanOut": 0,
+        "Stump": 0
+      }
+    },
+    {
+      "ID": "satnam-singh",
+      "PlayerName": "Satnam Singh",
+      "Role": "",
+      "Ball": "",
+      "Bat": "",
+      "Image_file": "satnam-singh.jpg",
       "Club": "Nepalese Canadian Cricket Club",
       "Team": "NO TEAM",
       "Batting": {

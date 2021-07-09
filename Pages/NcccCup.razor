@@ -1,0 +1,130 @@
+﻿@page "/NcccCup"
+
+@using NCCC_Blazor.Data
+@inject NcccCupModelService Services
+
+<header class="aboutUs_header header">
+    <div class="header_content">
+        <h2 class="heading">NCCC CUP</h2>
+    </div>
+</header>
+@if (ncccCups == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    int i = 0, j = 0, k = 0;
+    string ncccCupYear = "";
+    <section>
+        <div class="wrapper center">
+            <h2 class="section_heading">To be the Premier community cricket team in Canada.</h2>
+        </div>
+        <div class="blocks wrapper">
+            <div>
+                <div class="tabs_container">
+                    @foreach (var year in ncccCups)
+                    {
+                        if (ncccCupYear != @year.NcccCupModel[i].Year)
+                        {
+
+                            ncccCupYear = @year.NcccCupModel[i].Year;
+                            if (ncccCupYear == @year.NcccCupModel[0].Year)
+                            {
+                                <button id="year@(year.NcccCupModel[i].Year)" class="tabs active_tabs" onclick="changeGalleryYear(@year.NcccCupModel[i].Year)">@year.NcccCupModel[i].Year</button>
+                            }
+                            else
+                            {
+                                <button id="year@(year.NcccCupModel[i].Year)" class="tabs" onclick="changeGalleryYear(@year.NcccCupModel[i].Year)">@year.NcccCupModel[i].Year</button>
+                            }
+                        }
+                        i++;
+                    }
+                </div>
+            </div><br /><br />
+            @{ncccCupYear = ""; i = 0;
+            }
+            @foreach (var year in ncccCups)
+            {
+                if (ncccCupYear != @year.NcccCupModel[k].Year)
+                {
+                    j = 0;
+                    ncccCupYear = @year.NcccCupModel[k].Year;
+                    if (ncccCupYear == year.NcccCupModel[0].Year)
+                    {
+                        <div id=@year.NcccCupModel[k].Year class="image_gallery active_image_gallery">
+                            <div class="gallery_container image_gallery_container">
+                                @foreach (var images in ncccCups)
+                                {
+                                    if (ncccCupYear == @year.NcccCupModel[j].Year)
+                                    {
+                                        String cupYear = ncccCupYear;
+                                        String imgSrc = "/Static/Images/ncccCup/" + ncccCupYear + "/" + year.NcccCupModel[j].Image_file + ".jpg";
+                                        <div class="gallery_image" @onclick='() => showImage(cupYear, imgSrc, "2019 Champions")'>
+                                            <img src=@imgSrc alt=@year.NcccCupModel[j].Alt_text />
+                                        </div>
+                                    }
+                                    j++;
+                                }
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div id=@year.NcccCupModel[k].Year class="image_gallery">
+                            <div class="gallery_container image_gallery_container">
+                                @foreach (var images in ncccCups)
+                                {
+                                    if (ncccCupYear == @year.NcccCupModel[j].Year)
+                                    {
+                                        String cupYear = ncccCupYear;
+                                        String imgSrc = "/Static/Images/ncccCup/" + ncccCupYear + "/" + year.NcccCupModel[j].Image_file + ".jpg";
+                                        <div class="gallery_image" @onclick='() => showImage(cupYear, imgSrc, "2019 Champions")'>
+                                            <img src=@imgSrc alt=@year.NcccCupModel[j].Alt_text />
+                                        </div>
+                                    }
+                                    j++;
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+                k++;
+            }
+        </div>
+        @if (selectedImageSrc != null && selectedImageSrc != "")
+        {
+            <div class="popUp_Container">
+                <span class="close" @onclick="() => hideImage()"><i class="fas fa-times"></i></span>
+                <div class="popUp_Image">
+                    <img src=@selectedImageSrc alt=@alternativeText />
+                </div>
+                <div class="popUp_Overlay" @onclick="() => hideImage()"></div>
+            </div>
+        }
+    </section>
+}
+
+
+
+@code {
+    private NcccCupList[] ncccCups;
+
+    private String selectedImageSrc;
+    private String alternativeText;
+
+    void showImage(String year, String src, String alt)
+    {
+        selectedImageSrc = src;
+        alternativeText = alt;
+    }
+    void hideImage()
+    {
+        selectedImageSrc = "";
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        ncccCups = await Services.GetNcccCupImages();
+    }
+}

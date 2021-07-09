@@ -1,0 +1,88 @@
+{
+  "NcccCupModel": [
+    {
+      "ID": "2019-1",
+      "Image_file": "2019Champions",
+      "Alt_text": "2019 Champions",
+      "Year": "2019"
+    },
+    {
+      "ID": "2019-2",
+      "Image_file": "BoysWithNepalFlag",
+      "Alt_text": "Boys with nepal flag",
+      "Year": "2019"
+    },
+    {
+      "ID": "2019-3",
+      "Image_file": "CheerLeaders",
+      "Alt_text": "Cheer Leaders",
+      "Year": "2019"
+    },
+    {
+      "ID": "2019-4",
+      "Image_file": "EverestVsBelchowkBoys01",
+      "Alt_text": "Everest vs belchowk boys 01",
+      "Year": "2019"
+    },
+    {
+      "ID": "2019-5",
+      "Image_file": "EverestVsBelchowkBoys02",
+      "Alt_text": "Everest Vs Belchowk Boys 02",
+      "Year": "2019"
+    },
+    {
+      "ID": "2019-6",
+      "Image_file": "RedAndBlueTeamOwners",
+      "Alt_text": "Red And Blue Team Owners",
+      "Year": "2019"
+    },
+    {
+      "ID": "2019-7",
+      "Image_file": "TeamAtul",
+      "Alt_text": "Team Atul",
+      "Year": "2019"
+    },
+    {
+      "ID": "2019-8",
+      "Image_file": "TeamBelchowkBoys",
+      "Alt_text": "Team Belchowk Boys",
+      "Year": "2019"
+    },
+    {
+      "ID": "2019-9",
+      "Image_file": "TeamDental",
+      "Alt_text": "Team Dental",
+      "Year": "2019"
+    },
+    {
+      "ID": "2019-10",
+      "Image_file": "Trophies",
+      "Alt_text": "Trophies",
+      "Year": "2019"
+    },
+    {
+      "ID": "2020-1",
+      "Image_file": "RedVsYellow01",
+      "Alt_text": "Red Vs Yellow 01",
+      "Year": "2020"
+    },
+    {
+      "ID": "2020-2",
+      "Image_file": "RedVsYellow02",
+      "Alt_text": "Red Vs Yellow 02",
+      "Year": "2020"
+    },
+    {
+      "ID": "2020-3",
+      "Image_file": "TeamBelchowkBoys",
+      "Alt_text": "Team Belchowk Boys",
+      "Year": "2020"
+    },
+    {
+      "ID": "2020-4",
+      "Image_file": "TeamDental",
+      "Alt_text": "Team Dental",
+      "Year": "2020"
+    }
+  ]
+}

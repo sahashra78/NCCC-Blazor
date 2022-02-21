@@ -5,7 +5,7 @@
 
 <header class="board_header header">
     <div class="header_content">
-        <h2 class="heading">BOARD, EXECUTIVE MEMBERS, & ADVISORS</h2>
+        <h2 class="heading">BOARD & EXECUTIVE MEMBERS</h2>
     </div>
 </header>
 @if (boardMembers == null)
@@ -17,20 +17,31 @@ else
     <section>
         <div class="wrapper center">
 
-            <h2 class="section_heading">Board and Executive Members: 2019-2021</h2>
+            <h2 class="section_heading">Board and Executive Members: 2021-2023</h2>
 
         </div>
         <div class="wrapper gallery_container">
             @foreach (var member in boardMembers)
             {
-                <div class="board_profile_container">
-                    <img src="/Static/Images/board/@member.BoardMemberModel[i].Image_file" class="responsive" alt="@member.BoardMemberModel[i].ID" />
-                    <div class="member_information">
-                        <h2 class="padding">@member.BoardMemberModel[i].Name</h2>
-                        <h3>@member.BoardMemberModel[i].Role</h3>
-                        <p>@member.BoardMemberModel[i].Email</p>
-                    </div>
-                </div>i++;
+            <div class="board_profile_container">
+                @{
+                    var relativePath = "wwwroot/Static/Images/board/" + @member.BoardMemberModel[i].Image_file;
+                }
+                @if (System.IO.File.Exists(relativePath))
+                {
+                <img src="/Static/Images/board/@member.BoardMemberModel[i].Image_file" class="responsive" alt="@member.BoardMemberModel[i].ID" />
+                }
+                else
+                {
+                <img src="/Static/Images/players/@member.BoardMemberModel[i].Image_file" class="responsive" alt="@member.BoardMemberModel[i].ID" />
+                }
+
+                <div class="member_information">
+                    <h2 class="padding">@member.BoardMemberModel[i].Name</h2>
+                    <h3>@member.BoardMemberModel[i].Role</h3>
+                    <p>@member.BoardMemberModel[i].Email</p>
+                </div>
+            </div>i++;
             }
         </div>
     </section>

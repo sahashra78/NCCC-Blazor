@@ -1,0 +1,58 @@
+﻿@page "/Advisor"
+
+@using NCCC_Blazor.Data
+@inject AdvisorModelService Services
+
+<header class="board_header header">
+    <div class="header_content">
+        <h2 class="heading">ADVISORS</h2>
+    </div>
+</header>
+@if (advisors == null)
+{
+    <p><em>Loading...</em></p> }
+else
+{
+    int i = 0;
+    <section>
+        <div class="wrapper center">
+
+            <h2 class="section_heading">Advisors: 2022-2023</h2>
+
+        </div>
+        <div class="wrapper gallery_container">
+            @foreach (var advisor in advisors)
+            {
+                <div class="board_profile_container">
+                    <img src="/Static/Images/board/@advisor.AdvisorModel[i].Image_file" class="responsive" alt="@advisor.AdvisorModel[i].ID" />
+                    <div class="member_information">
+                        <h2 class="padding">@advisor.AdvisorModel[i].Name</h2>
+                        <h3>@advisor.AdvisorModel[i].Role</h3>
+                        <p>@advisor.AdvisorModel[i].Email</p>
+                    </div>
+                </div>i++;
+            }
+        </div>
+    </section>
+
+}
+
+@code { private AdvisorList[] advisors;
+
+    protected override async Task OnInitializedAsync()
+    {
+        advisors = await Services.GetAdvisors();
+    }
+}
+
+@inject IJSRuntime JSRuntime
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("TiltListener");
+        }
+    }
+}

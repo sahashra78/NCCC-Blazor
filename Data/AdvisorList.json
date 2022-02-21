@@ -1,0 +1,96 @@
+{
+  "AdvisorModel": [
+    
+    {
+      "ID": "pubudu-dassanayake",
+      "Name": "Pubudu Dassanayake",
+      "Role": "Honourable Advisor",
+      "Image_file": "pubudu-dassanayake.jpg",
+      "Email": ""
+    },
+    {
+      "ID": "atul-subedi",
+      "Name": "Atul Subedi",
+      "Role": "Legal Advisor",
+      "Image_file": "atul-subedi.jpg",
+      "Email": ""
+    },
+    //{
+    //  "ID": "anil-thapa",
+    //  "Name": "Anil Thapa",
+    //  "Role": "Marketing Advisor",
+    //  "Image_file": "anil-thapa.jpg",
+    //  "Email": ""
+    //},
+    //{
+    //  "ID": "rajen-shrestha",
+    //  "Name": "Rajen Shrestha",
+    //  "Role": "Financial Advisor",
+    //  "Image_file": "rajen-shrestha.jpg",
+    //  "Email": ""
+    //},
+    {
+      "ID": "gopi-krishna-kaphle",
+      "Name": "Gopi Krishna Kaphle",
+      "Role": "Community Advisor",
+      "Image_file": "gopi-krishna-kaphle.jpg",
+      "Email": ""
+    },
+    //{
+    //  "ID": "chiranjibi-ghimire",
+    //  "Name": "Chiranjibi Ghimire",
+    //  "Role": "Community Advisor",
+    //  "Image_file": "chiranjibi-ghimire.jpg",
+    //  "Email": ""
+    //},
+    //{
+    //  "ID": "basudev-lamsal",
+    //  "Name": "Basudev Lamsal",
+    //  "Role": "Accounting Advisor",
+    //  "Image_file": "basudev-lamsal.jpg",
+    //  "Email": ""
+    //},
+    {
+      "ID": "dipak-gautam",
+      "Name": "Dipak Gautam",
+      "Role": "Community Advisor",
+      "Image_file": "dipak-gautam.jpg",
+      "Email": ""
+    },
+    {
+      "ID": "purna-kandel",
+      "Name": "Dr.Purna Kandel",
+      "Role": "Marketing Advisor",
+      "Image_file": "purna-kandel.jpg",
+      "Email": ""
+    },
+    {
+      "ID": "sharad-paudel",
+      "Name": "CPA Sharad Paudel",
+      "Role": "Financial Advisor",
+      "Image_file": "sharad-paudel.jpg",
+      "Email": ""
+    },
+    {
+      "ID": "gita-dawadi",
+      "Name": "Gita Dawadi",
+      "Role": "Community Advisor",
+      "Image_file": "gita-dawadi.jpg",
+      "Email": ""
+    },
+    {
+      "ID": "uttam-kc",
+      "Name": "Uttam KC",
+      "Role": "Community Advisor",
+      "Image_file": "uttam-kc.jpg",
+      "Email": ""
+    },
+    {
+      "ID": "bigyan-karki",
+      "Name": "Bigyan Karki",
+      "Role": "International Community Advisor",
+      "Image_file": "bigyan-karki.jpg",
+      "Email": ""
+    }
+  ]
+}

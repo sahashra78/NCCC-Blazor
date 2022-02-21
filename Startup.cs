@@ -32,6 +32,7 @@ namespace NCCC_Blazor
             services.AddSingleton<MemberShipHelperService>();
             services.AddSingleton<PlayerModelService>();
             services.AddSingleton<BoardMemberModelService>();
+            services.AddSingleton<AdvisorModelService>();
             services.AddSingleton<NcccCupModelService>();
 
         }

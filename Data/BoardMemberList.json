@@ -15,11 +15,25 @@
       "Email": "bipin.parajuli@nccricketclub.org"
     },
     {
-      "ID": "niranjan-shrestha",
-      "Name": "Niranjan Shrestha",
+      "ID": "amrit-thapa",
+      "Name": "Amrit Thapa",
+      "Role": "Vice President",
+      "Image_file": "amrit-thapa.jpg",
+      "Email": ""
+    },
+    {
+      "ID": "dinesh-baniya",
+      "Name": "Dinesh Baniya",
       "Role": "General Secretary",
-      "Image_file": "niranjan-shrestha.jpg",
-      "Email": "niranjan.shrestha@nccricketclub.org"
+      "Image_file": "dinesh-baniya.jpg",
+      "Email": "dinesh.baniya@nccricketclub.org"
+    },
+    {
+      "ID": "binay-yadav",
+      "Name": "Binay Yadav",
+      "Role": "Secretary",
+      "Image_file": "binay-yadav.jpg",
+      "Email": "binay.yadav@nccricketclub.org"
     },
     {
       "ID": "kushal-ranabhat",
@@ -29,108 +43,52 @@
       "Email": "kushal.ranabhat@nccricketclub.org"
     },
     {
-      "ID": "dinesh-baniya",
-      "Name": "Dinesh Baniya",
-      "Role": "Media",
-      "Image_file": "dinesh-baniya.jpg",
-      "Email": "dinesh.baniya@nccricketclub.org"
+      "ID": "rejish-ranjit",
+      "Name": "Rejish Ranjit",
+      "Role": "Joint-Treasurer",
+      "Image_file": "rejish-ranjit.jpg",
+      "Email": "rejish.ranjit@nccricketclub.org"
     },
     {
-      "ID": "Imran-agsar",
-      "Name": "Imran Agsar",
-      "Role": "Executive Member/Founder President",
-      "Image_file": "Imran-agsar.jpg",
-      "Email": ""
+      "ID": "imran-asgar",
+      "Name": "Imran Asgar",
+      "Role": "Director",
+      "Image_file": "imran-asgar.jpg",
+      "Email": "imran.asgar@nccricketclub.org"
     },
     {
-      "ID": "amrit-thapa",
-      "Name": "Amrit Thapa",
-      "Role": "Executive Member",
-      "Image_file": "amrit-thapa.jpg",
+      "ID": "niranjan-shrestha",
+      "Name": "Niranjan Shrestha",
+      "Role": "Director",
+      "Image_file": "niranjan-shrestha.jpg",
+      "Email": "niranjan.shrestha@nccricketclub.org"
+    },
+    {
+      "ID": "ranjana-karki",
+      "Name": "Ranjana Karki",
+      "Role": "Director",
+      "Image_file": "ranjana-karki.jpg",
       "Email": ""
     },
     {
       "ID": "rajan-tamang",
       "Name": "Rajan Tamang",
-      "Role": "Executive Member",
+      "Role": "Director",
       "Image_file": "rajan-tamang.jpg",
-      "Email": ""
-    },
-    {
-      "ID": "bibash-thapa",
-      "Name": "Bibash Thapa",
-      "Role": "Executive Member",
-      "Image_file": "bibash-thapa.jpg",
-      "Email": ""
-    },
-    {
-      "ID": "mahesh-chhetri",
-      "Name": "Mahesh Chhetri",
-      "Role": "Executive Member",
-      "Image_file": "mahesh-chhetri.jpg",
       "Email": ""
     },
     {
       "ID": "kisan-shrestha",
       "Name": "Kisan Shrestha",
-      "Role": "Executive Member",
+      "Role": "Director",
       "Image_file": "kisan-shrestha.jpg",
       "Email": ""
     },
     {
       "ID": "binod-gupta",
       "Name": "Binod Gupta",
-      "Role": "Executive Member",
+      "Role": "Director",
       "Image_file": "binod-gupta.jpg",
-      "Email": ""
-    },
-    {
-      "ID": "pubudu-dassanayake",
-      "Name": "Pubudu Dassanayake",
-      "Role": "Honourable Advisor",
-      "Image_file": "pubudu-dassanayake.jpg",
-      "Email": ""
-    },
-    {
-      "ID": "atul-subedi",
-      "Name": "Atul Subedi",
-      "Role": "Legal Advisor",
-      "Image_file": "atul-subedi.jpg",
-      "Email": ""
-    },
-    {
-      "ID": "anil-thapa",
-      "Name": "Anil Thapa",
-      "Role": "Marketing Advisor",
-      "Image_file": "anil-thapa.jpg",
-      "Email": ""
-    },
-    {
-      "ID": "rajen-shrestha",
-      "Name": "Rajen Shrestha",
-      "Role": "Financial Advisor",
-      "Image_file": "rajen-shrestha.jpg",
-      "Email": ""
-    },
-    {
-      "ID": "gopi-krishna-kaphle",
-      "Name": "Gopi Krishna Kaphle",
-      "Role": "Community Advisor",
-      "Image_file": "gopi-krishna-kaphle.jpg",
-      "Email": ""
-    },
-    {
-      "ID": "chiranjibi-ghimire",
-      "Name": "Chiranjibi Ghimire",
-      "Role": "Community Advisor",
-      "Image_file": "chiranjibi-ghimire.jpg",
-      "Email": ""
-    },
-    {
-      "ID": "basudev-lamsal",
-      "Name": "Basudev Lamsal",
-      "Role": "Accounting Advisor",
-      "Image_file": "basudev-lamsal.jpg",
       "Email": ""
     }
   ]

@@ -485,6 +485,12 @@ header {
     font-size: 30px;
     font-weight: 400;
 }
+.sponsors_heading{
+    padding: 10px 20px;
+    margin: 5px auto;
+    text-align: center;
+    color: #000;
+}
 
 @media screen and (max-width: 850px) {
     header {
